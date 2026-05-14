@@ -1,0 +1,126 @@
+{
+  "actions": [],
+  "autoname": "BCN-.####",
+  "creation": "2024-01-01 00:00:00",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "to_user",
+    "subject",
+    "message",
+    "notification_type",
+    "priority",
+    "related_doctype",
+    "related_docname",
+    "status_section",
+    "is_read",
+    "read_at",
+    "is_dismissed"
+  ],
+  "fields": [
+    {
+      "fieldname": "to_user",
+      "fieldtype": "Link",
+      "label": "To User",
+      "options": "User",
+      "reqd": 1
+    },
+    {
+      "fieldname": "subject",
+      "fieldtype": "Data",
+      "label": "Subject",
+      "reqd": 1
+    },
+    {
+      "fieldname": "message",
+      "fieldtype": "Small Text",
+      "label": "Message"
+    },
+    {
+      "fieldname": "notification_type",
+      "fieldtype": "Select",
+      "label": "Type",
+      "options": "Info\nAlert\nReminder\nAction\nSystem",
+      "default": "Info"
+    },
+    {
+      "fieldname": "priority",
+      "fieldtype": "Select",
+      "label": "Priority",
+      "options": "Low\nNormal\nHigh\nUrgent",
+      "default": "Normal"
+    },
+    {
+      "fieldname": "related_doctype",
+      "fieldtype": "Link",
+      "label": "Related DocType",
+      "options": "DocType"
+    },
+    {
+      "fieldname": "related_docname",
+      "fieldtype": "Dynamic Link",
+      "label": "Related Document",
+      "options": "related_doctype"
+    },
+    {
+      "fieldname": "status_section",
+      "fieldtype": "Section Break",
+      "label": "Status"
+    },
+    {
+      "fieldname": "is_read",
+      "fieldtype": "Check",
+      "label": "Is Read",
+      "default": 0
+    },
+    {
+      "fieldname": "read_at",
+      "fieldtype": "Datetime",
+      "label": "Read At"
+    },
+    {
+      "fieldname": "is_dismissed",
+      "fieldtype": "Check",
+      "label": "Is Dismissed",
+      "default": 0
+    }
+  ],
+  "index_web_pages_for_search": 0,
+  "is_single": 0,
+  "istable": 0,
+  "links": [],
+  "modified": "2024-01-01 00:00:00",
+  "modified_by": "Administrator",
+  "module": "Bytecitybd",
+  "name": "ByteCityBD Notification",
+  "naming_rule": "Expression (old style)",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "role": "All",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "creation",
+  "sort_order": "DESC",
+  "states": [],
+  "title_field": "subject"
+}

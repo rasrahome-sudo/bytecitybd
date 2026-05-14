@@ -1,0 +1,117 @@
+{
+  "actions": [],
+  "autoname": "BCUP-.####",
+  "creation": "2024-01-01 00:00:00",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "user",
+    "role_in_app",
+    "default_customer",
+    "default_warehouse",
+    "app_settings_section",
+    "app_theme",
+    "app_language",
+    "receive_notifications",
+    "notification_sound"
+  ],
+  "fields": [
+    {
+      "fieldname": "user",
+      "fieldtype": "Link",
+      "label": "User",
+      "options": "User",
+      "reqd": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "role_in_app",
+      "fieldtype": "Select",
+      "label": "Role in App",
+      "options": "Admin\nManager\nSales Person\nViewer",
+      "default": "Viewer"
+    },
+    {
+      "fieldname": "default_customer",
+      "fieldtype": "Link",
+      "label": "Default Customer",
+      "options": "Customer"
+    },
+    {
+      "fieldname": "default_warehouse",
+      "fieldtype": "Link",
+      "label": "Default Warehouse",
+      "options": "Warehouse"
+    },
+    {
+      "fieldname": "app_settings_section",
+      "fieldtype": "Section Break",
+      "label": "App Settings"
+    },
+    {
+      "fieldname": "app_theme",
+      "fieldtype": "Select",
+      "label": "App Theme",
+      "options": "Light\nDark\nSystem",
+      "default": "Light"
+    },
+    {
+      "fieldname": "app_language",
+      "fieldtype": "Select",
+      "label": "App Language",
+      "options": "en\nbn\nhi",
+      "default": "en"
+    },
+    {
+      "fieldname": "receive_notifications",
+      "fieldtype": "Check",
+      "label": "Receive Notifications",
+      "default": 1
+    },
+    {
+      "fieldname": "notification_sound",
+      "fieldtype": "Select",
+      "label": "Notification Sound",
+      "options": "Default\nSilent\nBeep\nChime",
+      "default": "Default"
+    }
+  ],
+  "index_web_pages_for_search": 0,
+  "is_single": 0,
+  "istable": 0,
+  "links": [],
+  "modified": "2024-01-01 00:00:00",
+  "modified_by": "Administrator",
+  "module": "Bytecitybd",
+  "name": "ByteCityBD User Profile",
+  "naming_rule": "Expression (old style)",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "role": "All",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "creation",
+  "sort_order": "DESC",
+  "states": [],
+  "title_field": "user"
+}

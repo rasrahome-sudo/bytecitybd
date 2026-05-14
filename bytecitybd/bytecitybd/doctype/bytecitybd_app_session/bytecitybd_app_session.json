@@ -1,0 +1,87 @@
+{
+  "actions": [],
+  "autoname": "BCAS-.####",
+  "creation": "2024-01-01 00:00:00",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "user",
+    "session_id",
+    "device_type",
+    "device_info",
+    "login_timestamp",
+    "logout_timestamp",
+    "is_active"
+  ],
+  "fields": [
+    {
+      "fieldname": "user",
+      "fieldtype": "Link",
+      "label": "User",
+      "options": "User",
+      "reqd": 1
+    },
+    {
+      "fieldname": "session_id",
+      "fieldtype": "Data",
+      "label": "Session ID",
+      "unique": 1
+    },
+    {
+      "fieldname": "device_type",
+      "fieldtype": "Select",
+      "label": "Device Type",
+      "options": "Web\nAndroid\niOS\nDesktop",
+      "default": "Web"
+    },
+    {
+      "fieldname": "device_info",
+      "fieldtype": "Small Text",
+      "label": "Device Info"
+    },
+    {
+      "fieldname": "login_timestamp",
+      "fieldtype": "Datetime",
+      "label": "Login Timestamp"
+    },
+    {
+      "fieldname": "logout_timestamp",
+      "fieldtype": "Datetime",
+      "label": "Logout Timestamp"
+    },
+    {
+      "fieldname": "is_active",
+      "fieldtype": "Check",
+      "label": "Is Active",
+      "default": 1
+    }
+  ],
+  "index_web_pages_for_search": 0,
+  "is_single": 0,
+  "istable": 0,
+  "links": [],
+  "modified": "2024-01-01 00:00:00",
+  "modified_by": "Administrator",
+  "module": "Bytecitybd",
+  "name": "ByteCityBD App Session",
+  "naming_rule": "Expression (old style)",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "creation",
+  "sort_order": "DESC",
+  "states": [],
+  "title_field": "user"
+}

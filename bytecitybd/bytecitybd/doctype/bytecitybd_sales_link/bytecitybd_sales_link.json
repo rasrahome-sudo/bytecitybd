@@ -1,0 +1,86 @@
+{
+  "actions": [],
+  "autoname": "BCSL-.####",
+  "creation": "2024-01-01 00:00:00",
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+    "sales_order",
+    "customer",
+    "priority_flag",
+    "app_notes",
+    "follow_up_date"
+  ],
+  "fields": [
+    {
+      "fieldname": "sales_order",
+      "fieldtype": "Link",
+      "label": "Sales Order",
+      "options": "Sales Order",
+      "reqd": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "customer",
+      "fieldtype": "Link",
+      "label": "Customer",
+      "options": "Customer",
+      "reqd": 1
+    },
+    {
+      "fieldname": "priority_flag",
+      "fieldtype": "Select",
+      "label": "Priority Flag",
+      "options": "Normal\nHigh\nUrgent",
+      "default": "Normal"
+    },
+    {
+      "fieldname": "app_notes",
+      "fieldtype": "Small Text",
+      "label": "App Notes"
+    },
+    {
+      "fieldname": "follow_up_date",
+      "fieldtype": "Date",
+      "label": "Follow Up Date"
+    }
+  ],
+  "index_web_pages_for_search": 0,
+  "is_single": 0,
+  "istable": 0,
+  "links": [],
+  "modified": "2024-01-01 00:00:00",
+  "modified_by": "Administrator",
+  "module": "Bytecitybd",
+  "name": "ByteCityBD Sales Link",
+  "naming_rule": "Expression (old style)",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "role": "All",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "creation",
+  "sort_order": "DESC",
+  "states": [],
+  "title_field": "sales_order"
+}

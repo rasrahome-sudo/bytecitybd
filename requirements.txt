@@ -1,0 +1,3 @@
+# ByteCityBD ERPNext Custom App - Dependencies
+# frappe and erpnext are required apps, installed via bench
+# No additional Python dependencies needed for this app
