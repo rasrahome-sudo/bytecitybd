@@ -9,7 +9,7 @@ from frappe.auth import validate_login
 from bytecitybd.bytecitybd.api.utils import success_response, error_response
 
 
-@frappe.whitelist()
+@frappe.whitelist(allow_guest=True)
 def login(usr, pwd):
     """Authenticate user and return session token.
 
